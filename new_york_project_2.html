@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+    <title>carlson - New York Project 2</title>
+
+    <link href="bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet">
+    <link href="bootstrap-3.3.5-dist/css/bootstrap-theme.css.map">
+    <script src="js/jquery.js"></script>
+    <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script src="js/mainjs.js"></script>
+    <script src="js/prints.js"></script>
+    <link href="css/maincss.css" rel="stylesheet">
+</head>
+<body>
+<br>
+<div class="container-fluid">
+    <div class="row col-xs-10 col-xs-offset-1" id="menuRow">
+    </div>
+    <br><br><br><br>
+    <div id="mainDiv" class="col-xs-10 col-xs-offset-1">
+        <h3>NEW YORK PROJECT 2</h3>
+        <div id="newYorkProject2">
+            <a class="back">Back</a>
+        </div>
+
+        <script>
+            var newYorkProject2 = {
+                "images/prints/flatiron.jpg":"Flatiron<br>27 prints<br>55x70 cm",
+                "images/prints/chelsea.jpg":"Chelsea<br>27 prints<br>55x70 cm",
+                "images/prints/soho.jpg":"SoHo<br>27 prints<br>55x70 cm",
+                "images/prints/tribeca.jpg":"Tribeca<br>27 prints<br>55x70 cm"
+            };
+            generateRows(newYorkProject2, "#newYorkProject2");
+        </script>
+    </div>
+</div>
+<div id="topScroll">
+    <a id="topClick" onclick="goToTop()" ><span class="glyphicon glyphicon-chevron-up scrollIcon"></span></a>
+</div>
+</body>
+</html>

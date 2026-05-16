@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+    <title>carlson - Prints</title>
+
+    <link href="bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet">
+    <link href="bootstrap-3.3.5-dist/css/bootstrap-theme.css.map">
+    <script src="js/jquery.js"></script>
+    <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script src="js/mainjs.js"></script>
+    <link href="css/maincss.css" rel="stylesheet">
+</head>
+<body>
+<br>
+<div class="container-fluid">
+    <div class="row col-xs-10 col-xs-offset-1" id="menuRow">
+    </div>
+	<br><br><br><br>
+	<div id="mainDiv" class="col-xs-10 col-xs-offset-1">
+		<h3 style="font-size: 16px;">PRINTS (pigment ink print).<br>
+        	Examples of randomly generated prints by ArtGen.<br>
+		Signed and numbered 1/1.<br><br></h3>
+        	<div id="prints" class="container-fluid">
+        
+        <script>
+            var prints = {
+		"images/prints_artgen/STO_c6f30955-45da-400c-82ae-6665007718f8.png":"<br>",	
+		"images/prints_artgen/STO_0c1c499b-4b23-4fe9-b7a6-16b5865cf08a.png":"<br>",
+		"images/prints_artgen/STO_6ff80d27-a8f2-46a3-96be-4d4f8d95f1da.png":"<br>",
+		"images/prints_artgen/STO_8e48719f-fee8-4249-b9ac-537d3dc871b6.png":"<br>",
+		"images/prints_artgen/STO_bb42cdda-0cbd-4bfb-a8d4-c39d1bb5678c.png":"<br>",
+		"images/prints_artgen/STO_acb58104-81df-4c7b-a6f8-9afe8fea9a46.png":"<br>",
+		"images/prints_artgen/STO_fa30f20a-93e1-4f28-95e1-9d012b613def.png":"<br>",
+		"images/prints_artgen/STO_34654876-9648-48c6-a68d-2b60074986c9.png":"<br>",
+		"images/prints_artgen/STO_aa2ad156-25a1-451b-8a16-748580b38c11.png":"<br>",
+		"images/prints_artgen/NYT002_55x55.jpg":"<br>",
+		"images/prints_artgen/STO_f7dbfbe8-f443-4eb9-84d5-d5263e84d832.png":"<br>",
+		"images/prints_artgen/STO_947ef945-cf7c-44fc-832d-c5b8b5250870.png":"<br>",
+		"images/prints_artgen/STO_960fa593-642d-41fb-a85b-ef49fe7b9741.png":"<br>",
+		"images/prints_artgen/STO_3f602715-baef-4d36-9312-ba4b126e5313.png":"<br>",
+		"images/prints_artgen/STO_daf2b9bc-d1df-4374-9da9-c594b50b97fb.png":"<br>",
+		"images/prints_artgen/STO_8eed7631-b652-4eac-b840-4ee56cbfed8d.png":"<br>",
+		"images/prints_artgen/STO_a396ed1b-7d58-476b-bc83-11f7012df00a.png":"<br>",
+		"images/prints_artgen/STO_b41108a4-acb8-48dc-8fc5-40731beedf6d.png":"<br>",
+		"images/prints_artgen/STO_2ce1cfba-80ed-4b90-9d3a-b42f2524d4d8.png":"<br>",
+		"images/prints_artgen/STO_93c25bd0-c03e-4770-8ed3-27f2e4aaaf39.png":"<br>",		
+            };
+            generateRows(prints, "#prints");
+        </script>
+   	 <br><br>
+    
+	<h3 style="font-size: 16px;">PRINTS (pigment ink print).<br>
+        Examples of prints made in Photoshop.<br>
+	Signed and numbered.<br><br></h3>
+        
+        <script>
+            var prints = {
+		"images/prints/traffic.jpg":"<a href='new_york_project_1.html'>NEW YORK PROJECT 1</a>",
+                "images/prints/flatiron.jpg":"<a href='new_york_project_2.html'>NEW YORK PROJECT 2</a>",
+                "images/prints/no_big_hurry.jpg":"No Big Hurry<br>27 prints<br>85x85 cm",
+                "images/prints/these_days.jpg":"These Days<br>27 prints<br>40x75 cm",
+                "images/prints/holiday.jpg":"Holiday<br>27 prints<br>60x70 cm",
+                "images/prints/meddle_triennal.jpg":"Meddle<br>11 prints<br>83x83 cm",
+                "images/prints/inca_roads_II_red.jpg":"Inca Roads II Red<br>19 prints<br>150x25 cm",
+                "images/prints/long_story_short.jpg":"Long Story Short<br>19 prints<br>110x15 cm",
+            };
+            generateRows(prints, "#prints");
+        </script>
+	
+    </div>
+</div>
+<div id="topScroll">
+    <a id="topClick" onclick="goToTop()" ><span class="glyphicon glyphicon-chevron-up scrollIcon"></span></a>
+</div>
+</body>
+</html>

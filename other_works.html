@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+    <title>carlson - Other Works</title>
+
+    <link href="bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet">
+    <link href="bootstrap-3.3.5-dist/css/bootstrap-theme.css.map">
+    <script src="js/jquery.js"></script>
+    <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script src="js/mainjs.js"></script>
+    <link href="css/maincss.css" rel="stylesheet">
+</head>
+<body>
+<br>
+<div class="container-fluid">
+    <div class="row col-xs-10 col-xs-offset-1" id="menuRow">
+    </div>
+    <br><br><br><br>
+    <div id="mainDiv" class="col-xs-10 col-xs-offset-1">
+        <h3 style="font-size: 16px;">OTHER WORKS (2000 -)<br></h3>
+        <div id="otherWorksNew" class="container-fluid">
+        </div>
+        <br><br>
+         <h3 style="font-size: 16px;">OTHER WORKS (90's)<br></h3><br>
+        <div id="otherWorksOld" class="container-fluid">
+        </div>
+
+        <script>
+            var otherWorksNew = {
+                "images/other_works/black_fragments_circle.jpg":"Table Black Fragments<br>H: 43 cm, &Oslash;: 80 cm",
+                "images/other_works/media_cabinet.jpg":"Sideboard/Media Cabinet<br>H: 70 cm, W: 130 cm, D: 34 cm",
+                "images/other_works/1255_stor.jpg":"Detail table Kick Out",
+                "images/other_works/1316_stor.jpg":"Detail table Autumn Leaves"
+            };
+            generateRows(otherWorksNew, "#otherWorksNew");
+
+            var otherWorksOld = {
+                "images/other_works/acrylic_on_metal.jpg":"No Title, acrylic on metal<br>100x12 cm",
+                "images/other_works/ljusbage.jpg":"Lightbulb, acrylic on metal<br>38x2,5 cm",
+                "images/other_works/pipes.jpg":"Pipes, acrylic on wood<br>70x12 cm"
+            };
+            generateRows(otherWorksOld, "#otherWorksOld");
+        </script>
+    </div>
+</div>
+<div id="topScroll">
+    <a id="topClick" onclick="goToTop()" ><span class="glyphicon glyphicon-chevron-up scrollIcon"></span></a>
+</div>
+</body>
+</html>

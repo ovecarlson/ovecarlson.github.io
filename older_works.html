@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+    <title>carlson - Older Works</title>
+
+    <link href="bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet">
+    <link href="bootstrap-3.3.5-dist/css/bootstrap-theme.css.map">
+    <script src="js/jquery.js"></script>
+    <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script src="js/mainjs.js"></script>
+    <link href="css/maincss.css" rel="stylesheet">
+</head>
+<body>
+<br>
+<div class="container-fluid">
+    <div class="row col-xs-10 col-xs-offset-1" id="menuRow">
+    </div>
+    <br><br><br><br>
+    <div id="mainDiv" class="col-xs-10 col-xs-offset-1">
+<!--        <h3>OLDER WORKS (90's)</h3> -->
+		<h3 style="font-size: 16px;">OLDER WORKS (90's)<br></h3><br>
+        <div id="olderWorks90" class="container-fluid">
+        </div>
+        <br><br>
+<!--        <h3>OLDER WORKS (80's)</h3> -->
+		<h3 style="font-size: 16px;">OLDER WORKS (80's)<br></h3>
+        <div id="olderWorks80" class="container-fluid">
+        </div>
+        <br><br>
+ <!--       <h3>OLDER WORKS (70's)</h3> -->
+		<h3 style="font-size: 16px;">OLDER WORKS (70's)</h3>
+        <div id="olderWorks70" class="container-fluid">
+        </div>
+
+        <script>
+            var olderWorks90 = {
+                "images/paintings/ages_of_you.jpg":"Ages of You, acrylic on canvas<br>70x50 cm",
+                "images/paintings/varsalong_I.jpg":"No Title, acrylic on canvas<br>100x100 cm",
+                "images/paintings/varsalong_II.jpg":"No Title, acrylic on canvas<br>100x100 cm",
+                "images/paintings/white_squares.jpg":"White Squares, acrylic on canvas<br>100x100cm",
+                "images/paintings/blue_skies.jpg":"Blue Skies, acrylic on canvas and wood<br>100x70 cm"
+            };
+            generateRows(olderWorks90, "#olderWorks90");
+
+            var olderWorks80 = {
+                "images/older_works/squares_I_1985.jpg":"Acrylic on canvas<br>70x70 cm",
+                "images/older_works/squares_I_1988.jpg":"Acrylic on canvas<br>70x70 cm",
+                "images/older_works/squares_II_1985.jpg":"Acrylic on canvas<br>70x70 cm",
+                "images/older_works/squares_II_1988.jpg":"Acrylic on canvas<br>70x70 cm",
+                "images/older_works/three_squares.jpg":"Acrylic on canvas<br>80x100 cm",
+                "images/older_works/prism.jpg":"Acrylic on canvas<br>70x70 cm",
+                "images/older_works/blue_sky.jpg":"Acrylic on canvas<br>70x70 cm"
+            };
+            generateRows(olderWorks80, "#olderWorks80");
+
+            var olderWorks70 = {
+                "images/older_works/collage.jpg":"Acrylic on canvas<br>80x100 cm",
+                "images/older_works/acrylic_on_canvas_I_1976.jpg":"Acrylic on canvas<br>77x100 cm",
+                "images/older_works/acrylic_on_canvas_II_1976.jpg":"Acrylic on canvas<br>80x100 cm",
+                "images/older_works/acrylic_on_canvas_1977.jpg":"Acrylic on canvas<br>80x90 cm",
+                "images/older_works/landscape_I.jpg":"Acrylic on canvas<br>70x90 cm",
+                "images/older_works/landscape_II.jpg":"Acrylic on canvas<br>60x80 cm"
+            };
+            generateRows(olderWorks70, "#olderWorks70");
+        </script>
+    </div>
+</div>
+<div id="topScroll">
+    <a id="topClick" onclick="goToTop()" ><span class="glyphicon glyphicon-chevron-up scrollIcon"></span></a>
+</div>
+</body>
+</html>

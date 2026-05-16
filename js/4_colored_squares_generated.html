@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+    <title>carlson - 4 Colored Squares</title>
+
+    <link href="bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet">
+    <link href="bootstrap-3.3.5-dist/css/bootstrap-theme.css.map">
+    <script src="js/jquery.js"></script>
+    <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script src="js/mainjs.js"></script>
+    <script src="js/rat.js"></script>
+    <link href="css/rat.css" rel="stylesheet">
+    <link href="css/maincss.css" rel="stylesheet">
+
+
+</head>
+<body>
+<br>
+<div class="container-fluid">
+    <div class="row col-xs-10 col-xs-offset-1" id="menuRow">
+    </div>
+    <br><br><br><br>
+    <div id="mainDiv" class="col-xs-10 col-xs-offset-1">
+        <h3 id="rat_title">4 Colored Squares</h3>
+        <h3 style="text-align: center;">100 Generated Images</h3>
+        <div class="col-xs-2 rat_front" id="rat_text">
+            <table id="rat_text_table">
+                <tr>
+                    <td>Project name:</td>
+                    <td>4 Colored Squares</td>
+                </tr>
+                <tr>
+                    <td>Project start:</td>
+                    <td>2016-09-25</td>
+                </tr>
+                <tr>
+                    <td>Project end:</td>
+                    <td>2016-09-25</td>
+                </tr>
+                <tr>
+                    <td>Curator:</td>
+                    <td>Ove Carlson</td>
+                </tr>
+                <tr>
+                    <td>Computer program:</td>
+                    <td><a href="#" data-toggle="modal" data-target="#artgen_modal">ArtGen</a></td>
+                </tr>
+                <tr>
+                    <td>ArtGen Specification:</td>
+                    <td>Ove Carlson</td>
+                </tr>
+            </table>
+            <br><br>
+            The computer program ArtGen is used in many different ways regarding creation of
+            abstract geometric images.<br><br>
+
+            In this project ArtGen randomly places four fix size squares on a black surface. The image is built up in
+            four layers with one square in each layer. The transparency varies between the different layers so the
+            overlapping parts of the squares builds new shapes in unpredictable colors.<br><br>
+
+            In this way 100 images are created. From these images Ove Carlson selects one image that meets (or almost
+            meets) his artistic demands. The selected image is shown on the project main page as well as a matrix
+            containing the 100 randomly created images.<br><br>
+
+            What is art? When does art become art? Who is an artist?
+        </div>
+        <div class="col-xs-8 rat_front" id="rat_splash">
+            <img src="4_colored_squares/matrix.png" class="img-responsive" id="rat_splash_image">
+        </div>
+        <div class="col-xs-2 rat_front" id="rat_links">
+            <a href="4_colored_squares_generated.html">100 Generated Images</a><br><br>
+            <a href="4_colored_squares.html">Selected Image</a>
+        </div>
+    </div>
+</div>
+<div id="topScroll">
+    <a id="topClick" onclick="goToTop()" ><span class="glyphicon glyphicon-chevron-up scrollIcon"></span></a>
+</div>
+</body>
+</html>
