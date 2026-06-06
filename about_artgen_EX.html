@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <!-- Teckenkodning så att å, ä och ö visas korrekt -->
+    <meta charset="UTF-8">
+
+    <!-- Gör sidan responsiv på mobiltelefoner -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Centrerad text</title>
+
+    <style>
+
+        /* Hela sidans utseende */
+        body {
+            margin: 0;                     /* Tar bort webbläsarens standardmarginaler */
+            min-height: 100vh;            /* Minst lika hög som hela skärmen */
+
+            display: flex;                /* Aktiverar Flexbox */
+            justify-content: center;      /* Centrerar horisontellt */
+            align-items: center;          /* Centrerar vertikalt */
+
+            font-family: Arial, Helvetica, sans-serif; /* Läsvänlig font */
+
+            background-color: #ffffff;    /* Vit bakgrund */
+            color: #111111;               /* Mörk text */
+        }
+
+        /* Själva textblocket */
+        .textblock {
+            width: 50%;                   /* Upptar 50 % av skärmens bredd */
+
+            max-width: 800px;             /* Blir aldrig bredare än 800 px */
+            min-width: 280px;             /* Blir aldrig smalare än 280 px */
+
+            font-size: clamp(18px, 2vw, 24px);
+            /*
+               Minsta storlek: 18 px
+               Normal responsiv storlek: 2 % av viewportens bredd
+               Största storlek: 24 px
+            */
+
+            line-height: 1.55;            /* Radavstånd */
+            text-align: center;           /* Centrerad text */
+        }
+
+        /* Anpassning för mindre skärmar */
+        @media (max-width: 700px) {
+
+            .textblock {
+                width: 86%;
+                /*
+                   På mobil blir 50 % ofta för smalt.
+                   Därför används 86 % av skärmbredden.
+                */
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <main class="textblock">
+
+        Den fjärde serien med den koncentrerade zonen av vertikala färgintervall mellan två stora mörka fält för tankarna till något som blivit allt vanligare under de senaste tio åren. Varför det är så vet man inte.
+
+    </main>
+
+</body>
+
+</html>
