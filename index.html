@@ -1,60 +1,222 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bildgalleri</title>
 
-<head lang="en">
-    <meta charset="UTF-8">
     <meta http-equiv="cache-control" content="no-cache">
     <meta http-equiv="pragma" content="no-cache">
-    <title>ove carlson</title>
     <link href="bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet">
     <link href="bootstrap-3.3.5-dist/css/bootstrap-theme.css.map">
     <script src="js/jquery.js"></script>
     <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
     <script src="js/mainjs.js"></script>
     <link href="css/maincss.css" rel="stylesheet">
+ 
 
-    <script>
-        $(document).ready(function () {
-            updateImage();
-            setInterval(updateImage, 3000);
-        });
+  <style>
+    * {
+      box-sizing: border-box;
+    }
 
-        function shuffleArray(array) {
-            for (let i = array.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
-                [array[i], array[j]] = [array[j], array[i]];
-            }
-        }
+    body {
+      margin: 0;
+      padding: 0 200px;
+      font-family: Arial, sans-serif;
+      background: #fff;
+    }
 
-        var sequence = Array.from({ length: 50 }, (x, i) => i);
-        shuffleArray(sequence);
-        var i = 0;
+    .gallery {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 48px;
+      padding: 80px 0;
+    }
 
-        function updateImage() {
-            var current = sequence[i].toString();
-            var newSrc = "new_slideshow/" + current + ".png?" + Date.now();
-            $("#slideshow").attr("src", newSrc);
-            i++;
-            if (i >= 49) {
-                i = 0;
-                shuffleArray(sequence);
-            }
-        }
-    </script>
+    .item {
+      text-align: center;
+    }
+
+    .item a {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 6px;
+    }
+
+    .caption {
+ <!-- margin-top: 8px;
+      font-size: 1,5rem;
+      line-height: 1.3; -->
+      font-size: clamp(14px, 1.2vW, 20px);
+    }
+
+    /* Surfplattor */
+    @media (max-width: 900px) {
+      body {
+        padding: 0 30px;
+      }
+
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* Mobiler */
+    @media (max-width: 520px) {
+      body {
+        padding: 0 16px;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr;
+        gap: 56px;
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <br>
-    <div class="container-fluid">
-        <div class="row col-xs-10 col-xs-offset-1" id="menuRow">
-        </div>
-        <br><br><br><br>
-    </div>
-    <div align="center">
-        <img src="" class="img-responsive" style="align-content:center;" align="center" alt="" id="slideshow">
-        <div id="topScroll">
-            <a id="topClick" onclick="goToTop()"><span class="glyphicon glyphicon-chevron-up scrollIcon"></span></a>
-        </div>
-    </div>
+
+ <br>
+
+ <nav class="menu"
+ <div class="container-fluid">
+      <div class="row col-xs-10 col-xs-offset-1" id="menuRow">
+      </div>
+ </nav>
+
+      <br><br>
+ </div>
+
+  <main class="gallery">
+
+    <figure class="item">
+      <a href="prints_artgen.html">
+        <img src="new_slideshow/1.png" alt="Bildtext 1">
+        <figcaption class="caption">2024 Generative artwork (no AI)</figcaption>
+      </a>
+    </figure>
+
+    <figure class="item">
+      <a href="prints_artgen.html">
+        <img src="new_slideshow/21.png" alt="Bildtext 2">
+        <figcaption class="caption">2024 Generative artwork (no AI)</figcaption>
+      </a>
+    </figure>
+
+    <figure class="item">
+      <a href="paintings.html">
+        <img src="images/paintings/traffic.jpg" alt="Bildtext 3">
+        <figcaption class="caption">2011, Traffic, acrylic on mdf, 83x83 cm</figcaption>
+      </a>
+    </figure>
+
+    <figure class="item">
+      <a href="paintings.html">
+        <img src="images/paintings/be_yourself.jpg" alt="Bildtext 4">
+        <figcaption class="caption">2014, Be Yourself, acrylic on canvas, 100x100 cm</figcaption>
+      </a>
+    </figure>
+
+    <figure class="item">
+      <a href="paintings.html">
+        <img src="new_slideshow/14.png" alt="Bildtext 5">
+        <figcaption class="caption">2025 Generative artwork (no AI)</figcaption>
+      </a>
+    </figure>
+
+    <figure class="item">
+      <a href="older_works.html">
+        <img src="images/paintings/white_squares.jpg" alt="Bildtext 6">
+        <figcaption class="caption">1991, White Squares, acrylic on canvas, 70x70 cm</figcaption>
+      </a>
+    </figure>
+
+    <figure class="item">
+      <a href="prints_artgen.html">
+        <img src="new_slideshow/22.png" alt="Bildtext 7">
+        <figcaption class="caption">2021 Generative artwork (no AI)</figcaption>
+      </a>
+    </figure>
+
+    <figure class="item">
+      <a href="older_works.html">
+        <img src="images/older_works/squares_II_1988.jpg" alt="Bildtext 8">
+        <figcaption class="caption">1988, Squares, acrylic on canvas, 100x100 cm</figcaption>
+      </a>
+    </figure>
+
+    <figure class="item">
+      <a href="prints_artgen.html">
+        <img src="new_slideshow/24.png" alt="Bildtext 9">
+        <figcaption class="caption">2018 Generative artwork (no AI)</figcaption>
+      </a>
+    </figure>
+
+    <figure class="item">
+      <a href="prints.html">
+        <img src="images/prints/meddle_triennal.jpg" alt="Bildtext 10">
+        <figcaption class="caption">2010, Meddle, pigment ink print, 83x83 cm</figcaption>
+      </a>
+    </figure>
+
+    <figure class="item">
+      <a href="paintings.html">
+        <img src="images/paintings/no_such_thing.jpg" alt="Bildtext 11">
+        <figcaption class="caption">2012, No Such Thing, acrylic on mdf, 100x100 cm</figcaption>
+      </a>
+    </figure>
+
+    <figure class="item">
+      <a href="paintings.html">
+        <img src="images/paintings/too_soon.jpg" alt="Bildtext 12">
+        <figcaption class="caption">2016, Too Soon, acrylic on canvas, 80x80 cm</figcaption>
+      </a>
+    </figure>
+
+    <figure class="item">
+      <a href="new_york_project_1.html">
+        <img src="images/prints/traffic_III.jpg" alt="Bildtext 13">
+        <figcaption class="caption">2012, Traffic III, pigment ink print, 30x30 cm</figcaption>
+      </a>
+    </figure>
+
+    <figure class="item">
+      <a href="prints_artgen.html">
+        <img src="new_slideshow/38.png" alt="Bildtext 14">
+        <figcaption class="caption">2021 Generative artwork (no AI)</figcaption>
+      </a>
+    </figure>
+
+    <figure class="item">
+      <a href="prints_artgen.html">
+        <img src="new_slideshow/40.png" alt="Bildtext 15">
+        <figcaption class="caption">2019 Generative artwork (no AI)</figcaption>
+      </a>
+    </figure>
+
+    <figure class="item">
+      <a href="prints_artgen.html">
+        <img src="new_slideshow/41.png" alt="Bildtext 16">
+        <figcaption class="caption">2020 Generative artwork (no AI)</figcaption>
+      </a>
+    </figure>
+
+  </main>
+
+
+
+<div id="topScroll">
+     <a id="topClick" onclick="goToTop()"><span class="glyphicon glyphicon-chevron-up scrollIcon"></span></a>
+</div>
 </body>
 </html>

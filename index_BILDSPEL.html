@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+    <title>ove carlson</title>
+    <link href="bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet">
+    <link href="bootstrap-3.3.5-dist/css/bootstrap-theme.css.map">
+    <script src="js/jquery.js"></script>
+    <script src="bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script src="js/mainjs.js"></script>
+    <link href="css/maincss.css" rel="stylesheet">
+
+    <script>
+        $(document).ready(function () {
+            updateImage();
+            setInterval(updateImage, 3000);
+        });
+
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+        }
+
+        var sequence = Array.from({ length: 50 }, (x, i) => i);
+        shuffleArray(sequence);
+        var i = 0;
+
+        function updateImage() {
+            var current = sequence[i].toString();
+            var newSrc = "new_slideshow/" + current + ".png?" + Date.now();
+            $("#slideshow").attr("src", newSrc);
+            i++;
+            if (i >= 49) {
+                i = 0;
+                shuffleArray(sequence);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <br>
+    <div class="container-fluid">
+        <div class="row col-xs-10 col-xs-offset-1" id="menuRow">
+        </div>
+        <br><br><br><br>
+    </div>
+    <div align="center">
+        <img src="" class="img-responsive" style="align-content:center;" align="center" alt="" id="slideshow">
+        <div id="topScroll">
+            <a id="topClick" onclick="goToTop()"><span class="glyphicon glyphicon-chevron-up scrollIcon"></span></a>
+        </div>
+    </div>
+</body>
+</html>

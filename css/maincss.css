@@ -5,7 +5,9 @@ a {
 }
 
 #menuRow {
-    text-align: center;
+    text-align: left;
+<!--    left: 50px;
+    padding_left: auto;  ->
     vertical-align: middle;
 }
 
@@ -25,6 +27,39 @@ a {
     cursor: pointer;
 }
 
+.body {
+    margin: 0;
+}
+
+
+.container  {
+    display: flex;
+    gap: 30px;
+    height: 60px;
+    align-items: center;
+    width: 100%;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    background: white;
+    border-botttom: 1px solid #ddd;
+    z-index: 1000;
+}
+
+
+.main {
+    margin-top: 70px;
+    padding-top: 80px;
+}
+
+ 
 .dropdown {
     position: relative;
     display: inline-block;

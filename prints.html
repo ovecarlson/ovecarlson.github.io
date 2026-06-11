@@ -5,7 +5,6 @@
     <meta http-equiv="cache-control" content="no-cache">
     <meta http-equiv="pragma" content="no-cache">
     <title>carlson - Prints</title>
-
     <link href="bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet">
     <link href="bootstrap-3.3.5-dist/css/bootstrap-theme.css.map">
     <script src="js/jquery.js"></script>
@@ -15,18 +14,20 @@
 </head>
 <body>
 <br>
+<nav class="menu"
 <div class="container-fluid">
-    <div class="row col-xs-10 col-xs-offset-1" id="menuRow">
-    </div>
+       <div class="row col-xs-10 col-xs-offset-1" id="menuRow">
+       </div>
+       </nav>
 	<br><br><br><br>
-	    <div id="mainDiv" class="col-xs-10 col-xs-offset-1">
-	<h3 style="font-size: 16px;">PRINTS (pigment ink print).<br>
-        Examples of prints made in Photoshop.<br>
-	Signed and numbered.<br><br></h3>
-        <div id="prints" class="container-fluid">
-          </div>   
-         <script>
-            var prints = {
+	<div id="mainDiv" class="col-xs-10 col-xs-offset-1">
+		<h3 style="font-size: 16px;">PRINTS (pigment ink print).<br>
+        	Examples of prints made in Photoshop.<br>
+		Signed and numbered.<br><br></h3>
+        	<div id="prints" class="container-fluid">
+          	</div>   
+         	<script>
+            	var prints = {
 		"images/prints/traffic.jpg":"<a href='new_york_project_1.html'>NEW YORK PROJECT 1</a>",
                 "images/prints/flatiron.jpg":"<a href='new_york_project_2.html'>NEW YORK PROJECT 2</a>",
                 "images/prints/no_big_hurry.jpg":"No Big Hurry<br>27 prints<br>85x85 cm",
@@ -35,14 +36,14 @@
                 "images/prints/meddle_triennal.jpg":"Meddle<br>11 prints<br>83x83 cm",
                 "images/prints/inca_roads_II_red.jpg":"Inca Roads II Red<br>19 prints<br>150x25 cm",
                 "images/prints/long_story_short.jpg":"Long Story Short<br>19 prints<br>110x15 cm",
-            };
-            generateRows(prints, "#prints");
-        </script>
+            	};
+            	generateRows(prints, "#prints");
+        	</script>
 	
-    </div>
-</div>
+      </div>  
+</div>  
 <div id="topScroll">
     <a id="topClick" onclick="goToTop()" ><span class="glyphicon glyphicon-chevron-up scrollIcon"></span></a>
-</div>
+</div>  
 </body>
 </html>

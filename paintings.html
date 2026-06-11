@@ -15,42 +15,45 @@
 </head>
 <body>
 <br>
+<nav class="menu"
+<main class="container-fluid">
+
+   <div class="row col-xs-10 col-xs-offset-1" id="menuRow">
+   </div>
+   </nav>
 <div class="container-fluid">
-    <div class="row col-xs-10 col-xs-offset-1" id="menuRow">
-    </div>
     <br><br><br><br>
     <div id="mainDiv" class="col-xs-10 col-xs-offset-1">
-<!--        <h3>PAINTINGS (2000 -)</h3> -->
 		<h3 style="font-size: 16px;">PAINTINGS (2000 -)<br></h3>
-        <div id="newPaintings" class="container-fluid">
-        </div>
-        <br><br>
-
-        <script>
-            var paintings = {
-                "images/paintings/black_and_white.jpg":"Black and White, acrylic and pigment ink on aluminium<br>&Oslash;85 cm",
-                "images/paintings/how_many_lies.jpg":"How Many Lies, acrylic on mdf<br>100x100 cm",
-                "images/paintings/out_of_dawn.jpg":"Out Of Dawn, acrylic on canvas<br>100x130 cm",
-                "images/paintings/out_of_line.jpg":"Out Of Line, acrylic on canvas<br>81x122 cm",
-                "images/paintings/thunder_(on_the_mountain).jpg":"Thunder (On The Mountain), acrylic on canvas<br>100x130 cm",
-                "images/paintings/romance.jpg":"Romance, acrylic on canvas<br>80x80 cm",
-                "images/paintings/enlightenment.jpg": "Enlightenment, acrylic on mdf<br>80x80 cm",
-                "images/paintings/traffic.jpg": "Traffic, acrylic on mdf<br>83x83 cm",
-                "images/paintings/be_yourself.jpg":"Be Yourself, acrylic on canvas<br>100x100cm",
-                "images/paintings/new_york_traffic.jpg": "New York Traffic, acrylic on canvas<br>195x275 cm",
-                "images/paintings/out_of_exile.jpg": "Out Of Exile, acrylic on canvas<br>50x200 cm",
-                "images/paintings/strip_my_mind.jpg": "Strip My Mind, acrylic on canvas<br>80x180 cm",
-                "images/paintings/no_such_thing.jpg": " No Such Thing, acrylic on mdf<br>100x100 cm",
-                "images/paintings/memories.jpg": " Memories, acrylic on mdf<br>100x100 cm",
-                "images/paintings/blue_monday.jpg": " Blue Monday, acrylic on mdf<br>100x100 cm",
-                                "images/paintings/too_soon.jpg":" Too Soon, acrylic on canvas<br>80x80 cm"
-            };
-            generateRows(paintings, "#newPaintings");
-        </script>
+                  <div id="newPaintings" class="container-fluid">
+                  </div>
+                  <br><br>
+        		<script>
+            		var paintings = {
+                	"images/paintings/black_and_white.jpg":"Black and White, acrylic and pigment ink on aluminium<br>&Oslash;85 cm",
+                	"images/paintings/how_many_lies.jpg":"How Many Lies, acrylic on mdf<br>100x100 cm",
+                	"images/paintings/out_of_dawn.jpg":"Out Of Dawn, acrylic on canvas<br>100x130 cm",
+                	"images/paintings/out_of_line.jpg":"Out Of Line, acrylic on canvas<br>81x122 cm",
+                	"images/paintings/thunder_(on_the_mountain).jpg":"Thunder (On The Mountain), acrylic on canvas<br>100x130 cm",
+                	"images/paintings/romance.jpg":"Romance, acrylic on canvas<br>80x80 cm",
+                	"images/paintings/enlightenment.jpg": "Enlightenment, acrylic on mdf<br>80x80 cm",
+                	"images/paintings/traffic.jpg": "Traffic, acrylic on mdf<br>83x83 cm",
+                	"images/paintings/be_yourself.jpg":"Be Yourself, acrylic on canvas<br>100x100cm",
+                	"images/paintings/new_york_traffic.jpg": "New York Traffic, acrylic on canvas<br>195x275 cm",
+                	"images/paintings/out_of_exile.jpg": "Out Of Exile, acrylic on canvas<br>50x200 cm",
+                	"images/paintings/strip_my_mind.jpg": "Strip My Mind, acrylic on canvas<br>80x180 cm",
+                	"images/paintings/no_such_thing.jpg": " No Such Thing, acrylic on mdf<br>100x100 cm",
+                	"images/paintings/memories.jpg": " Memories, acrylic on mdf<br>100x100 cm",
+                	"images/paintings/blue_monday.jpg": " Blue Monday, acrylic on mdf<br>100x100 cm",
+                        "images/paintings/too_soon.jpg":" Too Soon, acrylic on canvas<br>80x80 cm"
+            		};
+            		generateRows(paintings, "#newPaintings");
+        		</script>
     </div>
 </div>
 <div id="topScroll">
     <a id="topClick" onclick="goToTop()" ><span class="glyphicon glyphicon-chevron-up scrollIcon"></span></a>
 </div>
+</main>
 </body>
 </html>
